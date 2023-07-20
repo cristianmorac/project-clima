@@ -48,7 +48,7 @@ const getDateCities = async () => {
         }
 
         ciudades.push(clima)
-        console.log(ciudades);
+        renderArray(ciudades)
     }
 }
 
