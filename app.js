@@ -52,6 +52,14 @@ const getDateCities = async () => {
     }
 }
 
+const renderCardWeather = (ciudad) => {
+    const card = document.createElement('div')
+    console.log(card);
+    card.classList = 'card'
+    card.innerHTML = `<h2>${ciudad.nombre}</h2>`
+    container.appendChild(card)
+}
+
 // recorrer el arreglo
 const renderArray = (ciudades) => {
     console.log(ciudades);
@@ -62,13 +70,7 @@ const renderArray = (ciudades) => {
     }
 }
 
-const renderCardWeather = (ciudad) => {
-    const card = document.createElement('div')
-    console.log(card);
-    card.classList = 'card'
-    card.innerHTML = `<h2>${ciudad.nombre}</h2>`
-    container.appendChild(card)
-}
+
 
 const main = async () => {
     await getDateCities();
