@@ -79,10 +79,7 @@ const getDateCities = async () => {
             if (count < 9) {
                 renderCardWeather(city)
             }
-            
-            
             count +=1
-            
         }
     }
 
