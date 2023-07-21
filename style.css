@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primario: #9be8d8;
+  --secundario: #f8fdcf;
+  --tercero: #e2f6ca;
+  --fondo: #78c1f3;
+}
+
+body {
+  background-color: var(--fondo);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  background: var(--primario);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.navbar input {
+  background-color: var(--secundario);
+  border: none;
+  border-radius: 30px;
+  padding: 0 20px;
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--tercero);
+  padding: 0 20px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+}
+
+.container-weather {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  padding: 10px;
+  gap: 20px;
+  text-align: start;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--primario);
+  border-radius: 30px;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 10px;
+  width: 100%;
+  height: max-content;
+  background-color: var(--secundario);
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px;
+  font-family: "Geologica", sans-serif;
+  font-weight: 500;
+}
+
+.card .cardText {
+  width: 55%;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.type-clima {
+  width: 40%;
+  height: 40%;
+  background-color: var(--);
+  border-radius: 30px;
+}
+
+.img-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 1093px) {
+    .container-weather {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+
+    .cardContent {
+        /* font-size: 0.8rem; */
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .container-weather {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card h2 {
+        font-size: 0.9rem;
+    }
+
+    .cardContent {
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .container-weather {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .navbar input {
+        font-size: 0.8rem;
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+    }
+
+    .cardContent {
+        font-size: 0.9rem;
+        margin: 2px;
+    }
+}
+
